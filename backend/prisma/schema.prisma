@@ -44,7 +44,7 @@ model Complaint {
   location      String
   status        Status @default(PENDING)
   imageUrl      String?
-  
+  imagePublicId String?
   studentId     String
   student       User @relation("StudentComplaints", fields:[studentId], references:[id])
 
